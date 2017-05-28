@@ -33,23 +33,12 @@ public class Controller {
         /**
          * 配置爬虫种子页面，就是规定的从哪里开始爬，可以配置多个种子页面
          */
-        controller.addSeed("http://www.ivsky.com/tupian/");
+        controller.addSeed("http://manhua.fzdm.com/132/116/");
 
         /**
          * 启动爬虫，爬虫从此刻开始执行爬虫任务，根据以上配置
          */
         controller.start(ImageCrawler.class, numberOfCrawlers);
 
-        // 休息5秒
-
-
-        System.out.println("休息10秒");
-
-        // 停止爬取
-        controller.shutdown();
-        System.out.println("停止爬取");
-
-        // 等待结束任务
-        controller.waitUntilFinish();
     }
 }

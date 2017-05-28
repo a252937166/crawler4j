@@ -35,7 +35,7 @@ public class ImageBean {
     }
 
     public static ImageBean toImageBean(String html){
-        String css_class="il_img";
+        String css_class="comic-contain";
         try {
             Parser parser = new Parser(html);
             NodeFilter filter=new CssSelectorNodeFilter("."+css_class);
